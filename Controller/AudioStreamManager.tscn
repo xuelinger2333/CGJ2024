@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://s1nhbssip4qb"]
+
+[ext_resource type="Script" path="res://Controller/AudioStreamManager.gd" id="1_fjssu"]
+
+[node name="AudioStreamManager" type="Node"]
+script = ExtResource("1_fjssu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="Cgj 2024"
+run/main_scene="res://Controller/GameManager.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+AudioStreamManager="*res://Controller/AudioStreamManager.tscn"
